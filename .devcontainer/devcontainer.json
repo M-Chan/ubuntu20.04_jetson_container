@@ -1,0 +1,6 @@
+{
+	"image": "ubuntu:20.04",
+	"runArgs": ["--security-opt=label=type:container_runtime_t"],
+	"workspaceMount": "source=${localWorkspaceFolder},target=${localWorkspaceFolder},type=bind",
+	"workspaceFolder": "${localWorkspaceFolder}"
+}
